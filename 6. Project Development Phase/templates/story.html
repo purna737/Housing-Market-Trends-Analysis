@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1 class="dashboard-title">Housing Market Insights Story</h1>
+
+<div class="tableau-wrapper">
+    <div class="tableau-box">
+
+        <div class='tableauPlaceholder' id='vizStory' style="width:100%; height:100%;">
+            <noscript>
+                <a href="#">
+                    <img alt="Housing Story"
+                         src="https://public.tableau.com/static/images/Ho/HousingMarketInsightsAStoryofSalesTrendsandPropertyFeatures/Story1/1_rss.png"
+                         style="width:100%; border:none;" />
+                </a>
+            </noscript>
+
+            <object class='tableauViz'>
+                <param name='host_url' value='https://public.tableau.com/' />
+                <param name='embed_code_version' value='3' />
+                <param name='name' value='HousingMarketInsightsAStoryofSalesTrendsandPropertyFeatures/Story1' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='no' />
+            </object>
+        </div>
+
+    </div>
+</div>
+
+<script type="text/javascript">
+    var divElement = document.getElementById('vizStory');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+
+    vizElement.style.width = "100%";
+    vizElement.style.height = "100%";
+
+    var scriptElement = document.createElement("script");
+    scriptElement.src = "https://public.tableau.com/javascripts/api/viz_v1.js";
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+</script>
+
+{% endblock %}

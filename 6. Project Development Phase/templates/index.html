@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- ================= HERO SECTION ================= -->
+<div class="page-bg">
+    <div class="hero-content">
+
+        <h1>Housing Market Insights</h1>
+
+        <p>
+            A comprehensive analysis of housing sales trends and property features
+            using interactive Tableau visualizations.
+        </p>
+
+        <!-- BUTTONS (SAME COLOR) -->
+        <div class="hero-buttons">
+            <a href="/dashboard" class="btn btn-primary">Explore Dashboard</a>
+            <a href="/story" class="btn btn-primary">View Story</a>
+        </div>
+
+    </div>
+</div>
+
+<!-- ================= FEATURES SECTION ================= -->
+<section class="features-section">
+
+    <h2>What This Project Analyzes</h2>
+
+    <div class="features">
+
+        <div class="feature-box">
+            <h3>📊 Sales Trends</h3>
+            <p>Analyze pricing patterns and growth over time.</p>
+        </div>
+
+        <div class="feature-box">
+            <h3>🏠 Property Features</h3>
+            <p>Bedrooms, bathrooms, area, and furnishing impact.</p>
+        </div>
+
+        <div class="feature-box">
+            <h3>📍 Location Analysis</h3>
+            <p>Preferred areas and premium price regions.</p>
+        </div>
+
+        <div class="feature-box">
+            <h3>📈 Market Insights</h3>
+            <p>Key patterns influencing real estate valuation.</p>
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

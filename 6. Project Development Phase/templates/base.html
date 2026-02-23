@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Housing Market Trends</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body class="page-bg">
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+        <!-- Left Title -->
+        <div class="nav-left">
+            Housing Market Trends
+        </div>
+
+        <!-- Right Menu -->
+        <div class="nav-right">
+            <a href="/">Home</a>
+            <a href="/dashboard">Dashboard</a>
+            <a href="/story">Story</a>
+            <a href="/about">About</a>
+        </div>
+
+    </nav>
+
+    <!-- PAGE CONTENT -->
+    <div class="page-container">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+</body>
+</html>
